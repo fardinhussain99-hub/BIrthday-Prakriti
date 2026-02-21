@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Prakriti 👑</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -11,10 +12,11 @@ body{
 margin:0;
 font-family:'Poppins',sans-serif;
 background:radial-gradient(circle at top,#ff9ec4,#ff5fa2,#b83280);
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
+padding:20px;
 overflow:hidden;
 }
 
@@ -31,27 +33,28 @@ to{opacity:1;transform:scale(1);}
 
 /* Card */
 .card{
-background:rgb(121, 8, 53);
-padding:40px;
-border-radius:25px;
-width:500px;
+background:rgba(255,255,255,0.95);
+padding:25px;
+border-radius:20px;
+width:90%;
+max-width:500px;
 text-align:center;
-box-shadow:0 25px 60px rgba(0,0,0,0.4);
-max-height:90vh;
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+max-height:85vh;
 overflow-y:auto;
 }
 
 /* Title */
 .birthday-text{
 font-family:'Cinzel',serif;
-font-size:28px;
+font-size:clamp(20px,5vw,28px);
 letter-spacing:3px;
 color:#b83280;
 }
 
 .name{
 font-family:'Great Vibes',cursive;
-font-size:60px;
+font-size:clamp(40px,8vw,60px);
 background:linear-gradient(90deg,#ffb6d9,#f9e79f,#ff69b4,#f9e79f);
 background-size:300% auto;
 color:transparent;
@@ -122,7 +125,8 @@ animation:shineSweep 3s infinite;
 }
 
 .photo-frame img{
-width:180px;
+width:100%;
+max-width:250px;
 border-radius:12px;
 display:block;
 }
@@ -330,3 +334,4 @@ ctx.fill();
 
 </body>
 </html>
+
